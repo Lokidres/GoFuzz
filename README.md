@@ -41,7 +41,6 @@ Sample Output 📄
 plaintext
 https://admin.target.com [200] (Size: 2.1KB)
 https://dev.target.com [302] → https://target.com/login
-http://test.target.com/api [403] (Size: 512B)
 Wordlists 📚
 Recommended wordlists:
 
