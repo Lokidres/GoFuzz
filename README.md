@@ -6,7 +6,6 @@
 
 Fast web fuzzer written in Go (source: `gofuzz.go`) for discovering hidden subdomains and directories.
 
-
 ## Features ✨
 - 🚀 **Multi-threaded** scanning (adjustable concurrency)
 - 🔍 **Dual-mode**: Subdomains (`-s`) + Directories (`-d`)
@@ -15,10 +14,9 @@ Fast web fuzzer written in Go (source: `gofuzz.go`) for discovering hidden subdo
 - 📊 **Verbose mode** for debugging (`-v`)
 
 ## Installation ⚙️
-### Method 1: From Source
+### Method 1: Direct Build
 ```bash
-git clone https://github.com/Lokidres/GoFuzz.go.git
-cd GoFuzz.go
+wget https://raw.githubusercontent.com/Lokidres/GoFuzz.go/main/gofuzz.go
 go build -o gofuzz gofuzz.go
 Method 2: Go Install
 bash
@@ -55,11 +53,14 @@ FuzzDB
 
 Building from Source 🛠️
 bash
-# Linux/macOS
+# Linux
 GOOS=linux go build -o gofuzz gofuzz.go
 
 # Windows
 GOOS=windows go build -o gofuzz.exe gofuzz.go
+
+# macOS
+GOOS=darwin go build -o gofuzz gofuzz.go
 License 📜
 MIT License - See LICENSE file.
 
