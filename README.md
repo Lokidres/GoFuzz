@@ -6,7 +6,6 @@
 
 Fast web fuzzer written in Go (source: `gofuzz.go`) for discovering hidden subdomains and directories.
 
-![GoFuzz Banner](https://i.imgur.com/JKvQw7E.png)
 
 ## Features ✨
 - 🚀 **Multi-threaded** scanning (adjustable concurrency)
