@@ -16,11 +16,10 @@ Fast web fuzzer written in Go (source: `gofuzz.go`) for discovering hidden subdo
 ## Installation ⚙️
 ### Method 1: Direct Build
 ```bash
-wget https://raw.githubusercontent.com/Lokidres/GoFuzz.go/main/gofuzz.go
-go build -o gofuzz gofuzz.go
-Method 2: Go Install
+ Go Install
 bash
-go install github.com/Lokidres/GoFuzz.go@latest
+go install github.com/Lokidres/GoFuzz@latest
+go run gofuzz.go or go build gofuzz.go && ./gofuzz.go
 Usage 🛠️
 Basic Scan
 bash
@@ -28,6 +27,7 @@ bash
 Advanced Example
 bash
 ./gofuzz -u https://target.com -s subs.txt -f 200,403 -o found.txt -v
+```
 All Options
 Flag	Description	Default
 -u	Target URL (required)	-
